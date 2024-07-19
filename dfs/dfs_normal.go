@@ -43,4 +43,3 @@ func createAdjList(adjList *[][]int) {
 		lineNo++
 	}
 }
-

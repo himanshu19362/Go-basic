@@ -12,7 +12,9 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello World")
+	generateFiles("file1.txt", 100)
+	generateFiles("file2.txt", 100)
+	generateFiles("file3.txt", 100)
 	var wg sync.WaitGroup
 	wg.Add(3)
 	start := time.Now()
@@ -77,4 +79,3 @@ func writeToFile(filename string, finalArray *[]int) {
 		fmt.Fprintln(file, num)
 	}
 }
-
